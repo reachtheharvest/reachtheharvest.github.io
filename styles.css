@@ -29,13 +29,57 @@ main {
   padding: 0 8vw;
 }
 
+ul.coconuts {
+  list-style-image: url('pictures/mango_color.png');
+  font-size: 150%;
+}
+
+li.coconuts {
+  padding-bottom: 15px;
+}
+
 .responsive {
   max-width: 100%;
   height: auto;
 }
 
+.responsive-fixed-height {
+  max-height: 100%;
+  width: auto;
+  padding: 7px 0;
+}
+
+.small-text {
+  font-size:10px;
+}
+
+
 .menu-hight-margin {
   margin-top: 48px;
+}
+
+.header
+{
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+
+  -webkit-transition-timing-function: cubic-bezier( 0.215, 0.610, 0.355, 1.000 );
+  transition-timing-function: cubic-bezier( 0.215, 0.610, 0.355, 1.000 );
+
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+}
+
+.header--hidden
+{
+  -webkit-transform: translateY( -100% );
+  -ms-transform: translateY( -100% );
+  transform: translateY( -100% );
+}
+
+.black_text
+{
+  color: black;
 }
 
 #noJSnav {
@@ -132,3 +176,4 @@ ul.topnav li.right {
   }
 
 }
+
